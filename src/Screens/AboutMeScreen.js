@@ -1,9 +1,12 @@
-import React from "react";
+import {React, useEffect} from "react";
 import { Typography } from "@mui/material";
 import portrait from './../static/images/Ryan_Anderson.jpg'
 import './../static/css/AboutMe.css'
 
 const About = () => {
+    useEffect(() => {
+        document.title = "About me"
+      }, []);
   return (
       <div className="centerChildren">
         <Typography variant="h1">About Me</Typography>

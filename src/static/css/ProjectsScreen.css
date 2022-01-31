@@ -1,0 +1,11 @@
+.flex-format {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.format {
+    width: 100%;
+    height: 100%;
+    flex: 1;
+}
