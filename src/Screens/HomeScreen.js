@@ -36,7 +36,7 @@ const Home = () => {
           margin={8} />
 
           <ProjectsPost title="RecolleX"  
-          image={require("../static/images/RecolleX.PNG")} alt="RecolleX Example"
+          image={require("../static/images/RecolleX.png")} alt="RecolleX Example"
           description="Developing a React Native Expo application for a client enabling users to track interactions with others and remember experiences they have had"
           margin={8} />
 

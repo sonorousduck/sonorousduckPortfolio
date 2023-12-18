@@ -32,6 +32,7 @@ const data = [
     out a custom file format creator for the game to develop Hex-based maps for puzzle design. I can send a copy of the code \
     on a case by case basis, as it is a private repo. Feel free to reach out if you want to see the editor, as well as feel \
     free to get the game!",
+    link: "https://github.com/Serpents-of-the-East/mgmr-editor"
   },
   {
     title: "HackUSU 2022",

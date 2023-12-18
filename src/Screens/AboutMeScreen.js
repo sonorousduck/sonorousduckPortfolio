@@ -14,7 +14,8 @@ const About = () => {
 
         <div style={{ width: '50%', marginTop: 16, marginBottom: 16 }}>
 
-            <Typography style={{paddingLeft: 8, paddingRight: 8}} >My name is Ryan Anderson and I am a PhD Student at Utah State University currently working towards a Concurrent Master's in Game Engine Development and AI and a PhD in Robotics and Uncertainty.
+            <Typography style={{paddingLeft: 8, paddingRight: 8}} >My name is Ryan Anderson and I am a PhD Student at Utah State University currently working towards a Concurrent Master's in Game Engine Development, AI and Robotics. 
+            {/* and a PhD in Robotics and Uncertainty. */}
             
             </Typography>
             <br/>
