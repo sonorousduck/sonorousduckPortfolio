@@ -1,10 +1,11 @@
-import {React, useEffect} from "react";
+import { React, useEffect } from "react";
 import { Typography } from "@mui/material";
 import { Title } from "@mui/icons-material";
 import "./../static/css/ProjectsScreen.css"
 import ProjectsPost from "../Components/ProjectsPost";
 import AudioPost from "../Components/AudioPost";
 import Navbar from "../Components/Header/Header";
+import Icon from '@mui/material/Icon';
 
 const data = [
   {
@@ -45,64 +46,64 @@ const data = [
     link: "https://github.com/Serpents-of-the-East/hack-usu",
   },
   {
-      title: "Hacking Challenge",
-      image: require("../static/images/HackingChallenge.png"),
-      alt: "Hacking Challenge",
-      description: "There was a need to develop a Hacking Challenge while I was a TA for the Web Development class at \
+    title: "Hacking Challenge",
+    image: require("../static/images/HackingChallenge.png"),
+    alt: "Hacking Challenge",
+    description: "There was a need to develop a Hacking Challenge while I was a TA for the Web Development class at \
       Utah State University. Starting in the Summer of 2021, I developed from scratch this hacking challenge in Django, Vue and \
       used Nginx to serve the website. I deployed it to Digital Ocean to host the server itself. Hosted at aggiectf.tk.",
-      link: "https://github.com/sonorousduck/hacking_challenge",
-    },
-    
-    {
-      title: "Portfolio Website",
-      image: require("../static/images/PortfolioWebsite.png"),
-      alt: "Portfolio Website Image",
-      description: "This website is the portfolio website. Written in React and hosted using AWS",
-      link: "https://github.com/sonorousduck/sonorousduckPortfolio",
-    },
+    link: "https://github.com/sonorousduck/hacking_challenge",
+  },
 
-    {
-      title: "Super Smash Bot and Server",
-      image: require("../static/images/SuperSmash.png"),
-      alt: "Super Smash Image",
-      description: "A Reinforment Agent using Deep Reinforcement learning techniques was trained to beat a level one AI. \
+  {
+    title: "Portfolio Website",
+    image: require("../static/images/PortfolioWebsite.png"),
+    alt: "Portfolio Website Image",
+    description: "This website is the portfolio website. Written in React and hosted using AWS",
+    link: "https://github.com/sonorousduck/sonorousduckPortfolio",
+  },
+
+  {
+    title: "Super Smash Bot and Server",
+    image: require("../static/images/SuperSmash.png"),
+    alt: "Super Smash Image",
+    description: "A Reinforment Agent using Deep Reinforcement learning techniques was trained to beat a level one AI. \
       Additionally, a server was created to allow for async training as well to work with the emulator. \
       Used Tensorflow as the framework.",
-      link: "https://github.com/sonorousduck/SuperSmashBot",
-    },
-    // {
-    //   title: "Music Generator",
-    //   // image: require("../static/images/mazegame.jpg"),
-    //   alt: "Music Generator",
-    //   description: "An AI trained to learn on music and output music that sounds similar. \
-    //   An included example of the song is included above. Used Tensorflow as the framework",
-    //   link: "https://github.com/sonorousduck/MusicGenerator",
-    // },
-    {
-      title: "Inigo Moncroya - Robot Vision and Navigation",
-      image: require("../static/images/YahboomTank.png"),
-      alt: "Image of Yahboom Tank",
-      description: "A Robotics system that uses OpenCV to do object detection and a trained Tensorflow model to do human detection. \
+    link: "https://github.com/sonorousduck/SuperSmashBot",
+  },
+  // {
+  //   title: "Music Generator",
+  //   // image: require("../static/images/mazegame.jpg"),
+  //   alt: "Music Generator",
+  //   description: "An AI trained to learn on music and output music that sounds similar. \
+  //   An included example of the song is included above. Used Tensorflow as the framework",
+  //   link: "https://github.com/sonorousduck/MusicGenerator",
+  // },
+  {
+    title: "Inigo Moncroya - Robot Vision and Navigation",
+    image: require("../static/images/YahboomTank.png"),
+    alt: "Image of Yahboom Tank",
+    description: "A Robotics system that uses OpenCV to do object detection and a trained Tensorflow model to do human detection. \
       Used a Yahboom G1 Tank for the hardware.",
-      link: "https://github.com/Max-Clark/inigo-moncrowya-cs5510",
-    },
-    {
-      title: "Flappy Bird RL",
-      image: require("../static/images/FlappyBird.png"),
-      alt: "Flappy Bird Picture",
-      description: "Simple Reinforcement Agent built to play and beat Flappy Bird. \
+    link: "https://github.com/Max-Clark/inigo-moncrowya-cs5510",
+  },
+  {
+    title: "Flappy Bird RL",
+    image: require("../static/images/FlappyBird.png"),
+    alt: "Flappy Bird Picture",
+    description: "Simple Reinforcement Agent built to play and beat Flappy Bird. \
       Different methods were implemented such as Actor Critic, Deep RL learning, etc. (WIP)",
-      link: "https://github.com/sonorousduck/FlappyBirdRL",
-    },
-    // {
-    //   title: "",
-    //   // image: require("../static/images/mazegame.jpg"),
-    //   alt: "",
-    //   description: "",
-    //   link: "",
-    // },
-  ];
+    link: "https://github.com/sonorousduck/FlappyBirdRL",
+  },
+  // {
+  //   title: "",
+  //   // image: require("../static/images/mazegame.jpg"),
+  //   alt: "",
+  //   description: "",
+  //   link: "",
+  // },
+];
 
 
 const Projects = () => {
@@ -110,27 +111,38 @@ const Projects = () => {
     document.title = "Projects"
   }, []);
 
+  let test = require("../static/images/SuperSmash.png");
+
   return (
     <div>
       <Navbar />
-
       <div className="center-children">
+        <div className="mb-8">
+          <h1 className="font-sans font-semibold text-5xl">Projects</h1>
+        </div>
+        <div>
+          <div className="card lg:card-side bg-base-100 shadow-xl glass">
+            <figure><img className="lg:w-152 h-96" src={test} alt="Game" /></figure>
+            <div className="card-body">
+              <h2 className="card-title">Super Smash Bot and Server</h2>
+              <p className="max-w-96">A Reinforment Agent using Deep Reinforcement learning techniques was trained to beat a level one AI.
+                Additionally, a server was created to allow for async training as well to work with the emulator. 
+                Used Tensorflow as the framework.
+                
+                
+                </p>
+              <div className="card-actions justify-end">
+                <button className="btn btn-primary">More</button>
+              </div>
+            </div>
+          </div>
+          <Icon baseClassName="fas" className="fa-plus-circle" style={{fontSize: 128}} />
 
-        <Typography variant="h1" marginTop={4}>
-          Previous Projects
-        </Typography>
-        <Typography marginBottom={4}>
-          My most recent project is below! Check out my project archive for more, or go straight to my GitHub!
-        </Typography>
         </div>
 
-        <div className="flex-format">
-          {data.map(project => 
-              <ProjectsPost title={project.title} image={project.image} alt={project.alt} description={project.description} link={project.link} margin={8}/> 
-            )}
-          <AudioPost margin={8} />
-        </div>
+
       </div>
+    </div>
   );
 }
 
