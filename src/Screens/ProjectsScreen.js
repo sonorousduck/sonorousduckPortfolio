@@ -5,7 +5,10 @@ import "./../static/css/ProjectsScreen.css"
 import ProjectsPost from "../Components/ProjectsPost";
 import AudioPost from "../Components/AudioPost";
 import Navbar from "../Components/Header/Header";
-import Icon from '@mui/material/Icon';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faJava, faJs, faPython } from "@fortawesome/free-brands-svg-icons";
+
+
 
 const data = [
   {
@@ -68,9 +71,10 @@ const data = [
     image: require("../static/images/SuperSmash.png"),
     alt: "Super Smash Image",
     description: "A Reinforment Agent using Deep Reinforcement learning techniques was trained to beat a level one AI. \
-      Additionally, a server was created to allow for async training as well to work with the emulator. \
+      Additionally, a server was created to allow for async training as well to work with the emulator. \n\n \
       Used Tensorflow as the framework.",
     link: "https://github.com/sonorousduck/SuperSmashBot",
+    icons: [<FontAwesomeIcon icon={faPython} className="size-8" />, <FontAwesomeIcon icon={faJava} className="size-8" />, <FontAwesomeIcon icon={faJs} className="size-8" />]
   },
   // {
   //   title: "Music Generator",
@@ -109,9 +113,13 @@ const data = [
 const Projects = () => {
   useEffect(() => {
     document.title = "Projects"
+
+
   }, []);
 
-  let test = require("../static/images/SuperSmash.png");
+  let test = require("../static/images/Ebony_Example.png");
+  let test1 = require("../static/images/recollex_example.png");
+  let test2 = require("../static/images/PEMS.png");
 
   return (
     <div>
@@ -120,26 +128,77 @@ const Projects = () => {
         <div className="mb-8">
           <h1 className="font-sans font-semibold text-5xl">Projects</h1>
         </div>
-        <div>
-          <div className="card lg:card-side bg-base-100 shadow-xl glass">
-            <figure><img className="lg:w-152 h-96" src={test} alt="Game" /></figure>
+        <div className="">
+          <div className="card lg:card-side bg-base-100 shadow-xl glass mb-8">
+            <figure><img className="max-h-96 h-96" src={test} alt="Game" /></figure>
             <div className="card-body">
               <h2 className="card-title">Super Smash Bot and Server</h2>
-              <p className="max-w-96">A Reinforment Agent using Deep Reinforcement learning techniques was trained to beat a level one AI.
-                Additionally, a server was created to allow for async training as well to work with the emulator. 
+              <p className="max-w-96 lg:max-w-96 lg:text-lg text-m">A Reinforment Agent using Deep Reinforcement learning techniques was trained to beat a level one AI.
+                Additionally, a server was created to allow for async training as well to work with the emulator.
+                <br></br>
+                <br></br>
+                <br></br>
                 Used Tensorflow as the framework.
-                
-                
-                </p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary">More</button>
+
+
+              </p>
+              <div className="card-actions justify-between">
+                <div className="self-center">
+                  
+                </div>
+                <div className="">
+                  <a href="https://github.com/sonorousduck/SuperSmashBot" className="btn btn-primary">More</a>
+                </div>
               </div>
             </div>
           </div>
-          <Icon baseClassName="fas" className="fa-plus-circle" style={{fontSize: 128}} />
+          <div className="card lg:card-side bg-base-100 shadow-xl glass mb-8">
+            <figure><img className="max-h-96 h-96" src={test1} alt="Game" /></figure>
+            <div className="card-body">
+              <h2 className="card-title">Super Smash Bot and Server</h2>
+              <p className="max-w-96 lg:max-w-96 lg:text-lg text-m">A Reinforment Agent using Deep Reinforcement learning techniques was trained to beat a level one AI.
+                Additionally, a server was created to allow for async training as well to work with the emulator.
+                <br></br>
+                <br></br>
+                <br></br>
+                Used Tensorflow as the framework.
 
+
+              </p>
+              <div className="card-actions justify-between">
+                <div className="self-center">
+                  
+                </div>
+                <div className="">
+                  <a href="https://github.com/sonorousduck/SuperSmashBot" className="btn btn-primary">More</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div className="card lg:card-side bg-base-100 shadow-xl glass mb-8">
+            <figure><img className="max-h-96 h-96" src={test2} alt="Game" /></figure>
+            <div className="card-body">
+              <h2 className="card-title">Super Smash Bot and Server</h2>
+              <p className="max-w-96 lg:max-w-96 lg:text-lg text-m">A Reinforment Agent using Deep Reinforcement learning techniques was trained to beat a level one AI.
+                Additionally, a server was created to allow for async training as well to work with the emulator.
+                <br></br>
+                <br></br>
+                <br></br>
+                Used Tensorflow as the framework.
 
+
+              </p>
+              <div className="card-actions justify-between">
+                <div className="self-center">
+                  
+                </div>
+                <div className="">
+                  <a href="https://github.com/sonorousduck/SuperSmashBot" className="btn btn-primary">More</a>
+                </div>
+              </div>
+            </div>
+          </div>
 
       </div>
     </div>
