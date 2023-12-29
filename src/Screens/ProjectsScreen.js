@@ -4,6 +4,7 @@ import { Title } from "@mui/icons-material";
 import "./../static/css/ProjectsScreen.css"
 import ProjectsPost from "../Components/ProjectsPost";
 import AudioPost from "../Components/AudioPost";
+import Navbar from "../Components/Header/Header";
 
 const data = [
   {
@@ -111,6 +112,8 @@ const Projects = () => {
 
   return (
     <div>
+      <Navbar />
+
       <div className="center-children">
 
         <Typography variant="h1" marginTop={4}>

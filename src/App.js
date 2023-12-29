@@ -10,7 +10,7 @@ import Projects from './Screens/ProjectsScreen';
 function App() {
   return (
     <Router>
-      <Navbar />
+      {/* <Navbar /> */}
       <Routes>
         <Route path='/about' element={<About />} />
         <Route path='/projects' element={<Projects />} />

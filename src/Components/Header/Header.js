@@ -1,24 +1,8 @@
 import React, { useEffect } from "react";
-import {
-  AppBar,
-  Toolbar,
-  CssBaseline,
-  Typography,
-  Icon,
-} from '@mui/material';
-import HomeIcon from '@mui/icons-material/Home';
-import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
-import CollectionsBookmarkIcon from '@mui/icons-material/CollectionsBookmark';
-import { Link } from "react-router-dom";
 import './Header.css';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import ThemeSelector from "../ThemeSelector";
-
-
-
-
 
 const Navbar = () => {
 
@@ -41,7 +25,7 @@ const Navbar = () => {
 
 
   return (
-    <div className="drawer">
+    <div className="drawer sticky top-0 z-50">
       <input id="my-drawer-3" type="checkbox" className="drawer-toggle " />
       <div className="drawer-content flex flex-col">
         {/* Navbar */}
@@ -61,12 +45,10 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-        {/* Page content here */}
       </div>
       <div className="drawer-side">
         <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
         <ul className="menu p-4 w-80 min-h-full bg-base-200 rounded-r-2xl">
-          {/* Sidebar content here */}
           <li><a href="/"><p class="font-semibold text-3xl">Home</p></a></li>
           <div className="divider"></div>
           <li><a href="/projects"><p class="font-semibold text-3xl">Projects</p></a></li>
@@ -78,7 +60,7 @@ const Navbar = () => {
           <li><a href="/blog"><p class="font-semibold text-3xl">Blog</p></a></li>
           <div className="divider"></div>
           <li>
-            <div className="dropdown dropdown-bottom dropdown-right font-semibold text-3xl" tabIndex={0}> Theme
+            <div className="dropdown dropdown-bottom dropdown-right font-semibold text-2xl" tabIndex={0}> Theme
               <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
                 <li><a className="w-full" onClick={() => toggleTheme('garden')}>Garden</a></li>
                 <li><a className="w-full" onClick={() => toggleTheme('forest')}>Forest</a></li>
