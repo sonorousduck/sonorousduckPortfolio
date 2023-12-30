@@ -49,15 +49,15 @@ const Navbar = () => {
       <div className="drawer-side">
         <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label>
         <ul className="menu p-4 w-80 min-h-full bg-base-200 rounded-r-2xl">
-          <li><a href="/"><p class="font-semibold text-3xl">Home</p></a></li>
+          <li><a href="/"><p className="font-semibold text-3xl">Home</p></a></li>
           <div className="divider"></div>
-          <li><a href="/projects"><p class="font-semibold text-3xl">Projects</p></a></li>
-          <div className="divider"></div>
-
-          <li><a href="/about"><p class="font-semibold text-3xl">About</p></a></li>
+          <li><a href="/projects"><p className="font-semibold text-3xl">Projects</p></a></li>
           <div className="divider"></div>
 
-          <li><a href="/blog"><p class="font-semibold text-3xl">Blog</p></a></li>
+          <li><a href="/about"><p className="font-semibold text-3xl">About</p></a></li>
+          <div className="divider"></div>
+
+          <li><a href="/blog"><p className="font-semibold text-3xl">Blog</p></a></li>
           <div className="divider"></div>
           <li>
             <div className="dropdown dropdown-bottom dropdown-right font-semibold text-2xl" tabIndex={0}> Theme
