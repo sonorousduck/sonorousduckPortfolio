@@ -1,44 +1,42 @@
-import {React, useEffect} from "react";
+import { React, useEffect } from "react";
 import { Typography } from "@mui/material";
 import portrait from './../static/images/Ryan_Anderson.jpg'
 import './../static/css/AboutMe.css'
+import Navbar from "../Components/Header/Header";
 
 const About = () => {
     useEffect(() => {
         document.title = "About me"
-      }, []);
-  return (
-      <div className="centerChildren">
-        <Typography variant="h1">About Me</Typography>
-        <img style={{width: 400, height: "auto"}} src={portrait} alt="Ryan Anderson Portrait" />
+    }, []);
+    return (
+        <div>
+            <Navbar />
+            <div className="centerChildren">
+                <div className="mb-8">
+                    <h1 className="font-sans font-semibold text-5xl">About Me</h1>
+                </div>
+                <img className="h-1/5 w-1/5 rounded-xl" src={portrait} alt="Ryan Anderson Portrait" />
 
-        <div style={{ width: '50%', marginTop: 16, marginBottom: 16 }}>
+                <div style={{ width: '50%', marginTop: 16, marginBottom: 16 }}>
+                    <p>
+                        My name is Ryan Anderson and I am a Master's Student at Utah State University currently working on a thesis in Game Engine Development, AI, and Robotics.
+                    </p>
+                </div>
 
-            <Typography style={{paddingLeft: 8, paddingRight: 8}} >My name is Ryan Anderson and I am a PhD Student at Utah State University currently working towards a Concurrent Master's in Game Engine Development, AI and Robotics. 
-            {/* and a PhD in Robotics and Uncertainty. */}
-            
-            </Typography>
-            <br/>
+                <div className="w-full justify-center flex flex-row mt-8">
+                    <a className="btn w-4/12 mx-4" href="Ryan Anderson Resume.pdf" download={"Ryan Anderson Resume.pdf"}>
+                        Resume
+                    </a>
+                    <a className="btn w-4/12 mx-4" href="Ryan Anderson CV.docx.pdf" download={"Ryan Anderson CV.docx.pdf"}>
+                        Cover Letter
+                    </a>
+                </div>
 
+            </div>
         </div>
 
-        <div className="contactInformation">
-            <Typography >
-                <a style={{marginRight: 32}} href="mailto: sonorousduck@gmail.com">
-                Email
-                </a>
-            </Typography>
-            <Typography>
-                <a style={{marginRight: 32}} href="https://www.linkedin.com/in/sonorousduck/">
-                    LinkedIn
-                </a>
-            </Typography>
-        </div>
 
-    </div>
-
-    
-  );
+    );
 }
 
 export default About;

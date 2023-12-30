@@ -10,12 +10,12 @@ import Logo from "./Logo";
 const ProjectsPost = (props) => {
   console.log(props.icons)
   return (
-    <div className="w-5/12">
+    <div className="w-7/12">
       <div className="card lg:card-side bg-base-100 shadow-xl glass mb-8 w-full">
         <figure><img className="max-h-96 h-96" src={props.image} alt={props.alt} /></figure>
         <div className="card-body">
           <h2 className="card-title">{props.title}</h2>
-          <p className="max-w-96 lg:max-w-96 lg:text-lg text-m">
+          <p className="max-w-96 lg:max-w-96 lg:text-m text-m">
             {props.description}
           </p>
           <div className="card-actions justify-between">

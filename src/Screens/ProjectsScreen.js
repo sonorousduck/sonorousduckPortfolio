@@ -157,7 +157,7 @@ const regularProjects = [
 
 const audioProjects = [
   {
-    title: "",
+    title: "AI Generated LoFi Music",
     audioSrc: "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1226751406&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true",
     description: "Using an LSTM, I created a simple AI to create LoFi music, based on a dataset that I found containing midi lofi music. Only plays piano right now, but I have plans to use transformers and create more instruments",
     link: "https://github.com/sonorousduck/MusicGenerator",
@@ -184,7 +184,7 @@ const Projects = () => {
           <ProjectsPost key={key} title={project.title} image={project.image} alt={project.alt} description={project.description} link={project.link} icons={project.icons} />
         )}
         {audioProjects.map((project, key) => 
-          <AudioPost key={key} title={project.title} audioSrc={project.audioSrc} description={project.description} link={project.link} />
+          <AudioPost key={key} title={project.title} audioSrc={project.audioSrc} description={project.description} link={project.link} icons={project.icons}/>
         )}
 
       </div>

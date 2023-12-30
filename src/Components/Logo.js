@@ -29,47 +29,47 @@ const Logo = (props) => {
         case "Java":
             return (
                 <div className="tooltip mx-2" data-tip={props.icon}>
-                    <FontAwesomeIcon icon={faJava} className="size-14" />
+                    <FontAwesomeIcon icon={faJava} className="size-8" />
                 </div>
             );
         case "Python":
             return (
                 <div className="tooltip mx-2" data-tip={props.icon}>
-                    <FontAwesomeIcon icon={faPython} className="size-14" />
+                    <FontAwesomeIcon icon={faPython} className="size-8" />
                 </div>
 
             );
         case "Javascript":
             return (
                 <div className="tooltip mx-2" data-tip={props.icon}>
-                    <FontAwesomeIcon icon={faJs} className="size-14" />
+                    <FontAwesomeIcon icon={faJs} className="size-8" />
                 </div>
 
             );
         case "C++":
             return (
                 <div className="tooltip mx-2" data-tip={props.icon}>
-                    <img src={cppLogo} alt="cppLogo" className="size-14" />
+                    <img src={cppLogo} alt="cppLogo" className="size-8" />
                 </div>
 
             );
         case "C#":
             return (
                 <div className="tooltip mx-2" data-tip={props.icon}>
-                    <img src={csharpLogo} alt="csharpLogo" className="size-14"/>
+                    <img src={csharpLogo} alt="csharpLogo" className="size-8" />
                 </div>
 
             );
         case "Unity":
             return (
                 <div className="tooltip mx-2" data-tip={props.icon}>
-                    <FontAwesomeIcon icon={faUnity} className="size-14" />
+                    <FontAwesomeIcon icon={faUnity} className="size-8" />
                 </div>
             );
         case "PyTorch":
             return (
                 <div className="tooltip mx-2" data-tip={props.icon}>
-                    <img src={pytorchLogo} alt="pytorchLogo" className="size-14" />
+                    <img src={pytorchLogo} alt="pytorchLogo" className="size-8" />
                 </div>
 
             );
@@ -83,105 +83,105 @@ const Logo = (props) => {
         case "OpenGL":
             return (
                 <div className="tooltip mx-2" data-tip={props.icon}>
-                    <img src={openGLLogo} alt="openGlLogo" className="size-14" />
+                    <img src={openGLLogo} alt="openGlLogo" className="size-8" />
                 </div>
 
             );
         case "Gazebo":
             return (
                 <div className="tooltip mx-2" data-tip={props.icon}>
-                   <img src={gazeboLogo} alt="gazeboLogo" className="size-16" />
+                    <img src={gazeboLogo} alt="gazeboLogo" className="size-16" />
                 </div>
 
             );
         case "React":
             return (
                 <div className="tooltip mx-2" data-tip={props.icon}>
-                    <FontAwesomeIcon icon={faReact} className="size-14" />
+                    <FontAwesomeIcon icon={faReact} className="size-8" />
                 </div>
 
             );
         case "React Native":
             return (
                 <div className="tooltip mx-2" data-tip={props.icon}>
-                    <img src={reactNativeLogo} alt="reactNativeLogo" className="size-14" />
+                    <img src={reactNativeLogo} alt="reactNativeLogo" className="size-8" />
                 </div>
 
             );
         case "Expo":
             return (
                 <div className="tooltip mx-2" data-tip={props.icon}>
-                    <img src={expoLogo} alt="expoLogo" className="size-14" />
+                    <img src={expoLogo} alt="expoLogo" className="size-8" />
                 </div>
 
             );
         case "Firebase":
             return (
                 <div className="tooltip mx-2" data-tip={props.icon}>
-                    <img src={firebaseLogo} alt="firebaseLogo" className="size-14" />
+                    <img src={firebaseLogo} alt="firebaseLogo" className="size-8" />
                 </div>
 
             );
         case "REST":
             return (
                 <div className="tooltip mx-2" data-tip={props.icon}>
-                    <img src={restLogo} alt="restLogo" className="size-14" />
+                    <img src={restLogo} alt="restLogo" className="size-8" />
                 </div>
 
             );
         case "NodeJS":
             return (
                 <div className="tooltip mx-2" data-tip={props.icon}>
-                    <FontAwesomeIcon icon={faNodeJs} className="size-14" />
+                    <FontAwesomeIcon icon={faNodeJs} className="size-8" />
                 </div>
 
             );
         case "Django":
             return (
                 <div className="tooltip mx-2" data-tip={props.icon}>
-                    <img src={djangoLogo} alt="djangoLogo" className="size-14" />
+                    <img src={djangoLogo} alt="djangoLogo" className="size-8" />
                 </div>
 
             );
         case "Vue":
             return (
                 <div className="tooltip mx-2" data-tip={props.icon}>
-                    <FontAwesomeIcon icon={faVuejs} className="size-14" />
+                    <FontAwesomeIcon icon={faVuejs} className="size-8" />
                 </div>
 
             );
         case "Digital Ocean":
             return (
                 <div className="tooltip mx-2" data-tip={props.icon}>
-                    <FontAwesomeIcon icon={faDigitalOcean} className="size-14" />
+                    <FontAwesomeIcon icon={faDigitalOcean} className="size-8" />
                 </div>
 
             );
         case "AWS":
             return (
                 <div className="tooltip mx-2" data-tip={props.icon}>
-                    <FontAwesomeIcon icon={faAws} className="size-14" />
+                    <FontAwesomeIcon icon={faAws} className="size-8" />
                 </div>
 
             );
         case "DaisyUI":
             return (
                 <div className="tooltip mx-2" data-tip={props.icon}>
-                    <img src={daisyLogo} alt="daisyLogo" className="size-14" />
+                    <img src={daisyLogo} alt="daisyLogo" className="size-8" />
                 </div>
 
             );
         case "Tensorflow":
             return (
                 <div className="tooltip mx-2" data-tip={props.icon}>
-                    <img src={tensorflowLogo} alt="tensorflowLogo" className="size-14" />
+                    <img src={tensorflowLogo} alt="tensorflowLogo" className="size-8" />
                 </div>
 
             );
         case "OpenCV":
             return (
                 <div className="tooltip mx-2" data-tip={props.icon}>
-                    <img src={opencvLogo} alt="opencvLogo" className="size-14" />
+                    <img src={opencvLogo} alt="opencvLogo" className="size-8" />
                 </div>
 
             );

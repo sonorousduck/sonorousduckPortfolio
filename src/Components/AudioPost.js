@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "./Logo";
 
 /* Props format for a short post
   title: title for the post
@@ -8,18 +9,21 @@ import React from "react";
 const AudioPost = (props) => {
 
   return (
-    <div className="w-5/12">
+    <div className="w-7/12">
       <div className="card lg:card-side bg-base-100 shadow-xl glass mb-8">
         <figure>
           <iframe title={props.title} width="100%" height="300" scrolling="no" frameBorder="no" allow="autoplay" src={props.audioSrc}></iframe>
         </figure>
         <div className="card-body">
           <h2 className="card-title">{props.title}</h2>
-          <p className="max-w-96 lg:max-w-96 lg:text-lg text-m">
+          <p className="max-w-96 lg:max-w-96 text-m">
             {props.description}
           </p>
           <div className="card-actions justify-between">
-            <div className="self-center">
+            <div className="self-center flex flex-row">
+              {props.icons.map((icon, key) => (
+                <Logo key={key} icon={icon} />
+              ))} 
 
             </div>
             <div className="">
