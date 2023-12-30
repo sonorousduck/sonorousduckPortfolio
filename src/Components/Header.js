@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import './Header.css';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -38,7 +37,7 @@ const Navbar = () => {
           <div className="flex-1 px-2 mx-2"></div>
 
           <div className="flex-none hidden lg:block">
-            <ul className="menu menu-horizontal">
+            <ul className="menu menu-horizontal px-1">
               <li><a href="mailto: sonorousduck@gmail.com"><EmailOutlinedIcon /></a></li>
               <li><a href="https://github.com/sonorousduck"><GitHubIcon /></a></li>
               <li><a href="https://www.linkedin.com/in/sonorousduck/"><LinkedInIcon /></a></li>

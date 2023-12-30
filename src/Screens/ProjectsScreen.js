@@ -2,7 +2,7 @@ import { React, useEffect } from "react";
 import "./../static/css/ProjectsScreen.css"
 import ProjectsPost from "../Components/ProjectsPost";
 import AudioPost from "../Components/AudioPost";
-import Navbar from "../Components/Header/Header";
+import Navbar from "../Components/Header";
 
 
 

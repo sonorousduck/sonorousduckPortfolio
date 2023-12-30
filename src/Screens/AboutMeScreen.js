@@ -1,7 +1,7 @@
 import { React, useEffect } from "react";
 import portrait from './../static/images/Ryan_Anderson.jpg'
 import './../static/css/AboutMe.css'
-import Navbar from "../Components/Header/Header";
+import Navbar from "../Components/Header";
 
 const About = () => {
     useEffect(() => {
@@ -23,11 +23,11 @@ const About = () => {
                 </div>
 
                 <div className="w-full justify-center flex flex-row mt-8">
-                    <a className="btn w-4/12 mx-4" href="RyanAndersonResume.pdf" download={"RyanAndersonResume.pdf"}>
+                    <a className="btn w-4/12 mx-4" href={require("../static/documents/RyanAndersonCV.docx.pdf")} download={"RyanAndersonResume.pdf"}>
                         Resume
                     </a>
-                    <a className="btn w-4/12 mx-4" href="RyanAndersonCV.docx.pdf" download={"RyanAndersonCV.docx.pdf"}>
-                        Cover Letter
+                    <a className="btn w-4/12 mx-4" href={require("../static/documents/RyanAndersonCV.docx.pdf")} download={"RyanAndersonCV.docx.pdf"}>
+                        CV
                     </a>
                 </div>
 

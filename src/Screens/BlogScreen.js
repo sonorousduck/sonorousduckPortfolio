@@ -1,5 +1,5 @@
 import { React, useEffect } from "react";
-import Navbar from "../Components/Header/Header";
+import Navbar from "../Components/Header";
 
 const Blog = () => {
   useEffect(() => {
