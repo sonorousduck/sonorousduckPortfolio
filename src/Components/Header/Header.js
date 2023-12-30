@@ -60,24 +60,24 @@ const Navbar = () => {
           <li><a href="/blog"><p className="font-semibold text-3xl">Blog</p></a></li>
           <div className="divider"></div>
           <li>
-            <div className="dropdown dropdown-bottom dropdown-right font-semibold text-2xl" tabIndex={0}> Theme
-              <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-                <li><a className="w-full" onClick={() => toggleTheme('garden')}>Garden</a></li>
-                <li><a className="w-full" onClick={() => toggleTheme('forest')}>Forest</a></li>
-                <li><a className="w-full" onClick={() => toggleTheme('business')}>Business</a></li>
-                <li><a className="w-full" onClick={() => toggleTheme('night')}>Night</a></li>
-                <li><a className="w-full" onClick={() => toggleTheme('light')}>Light</a></li>
-                <li><a className="w-full" onClick={() => toggleTheme('dark')}>Dark</a></li>
-                <li><a className="w-full" onClick={() => toggleTheme('cupcake')}>Cupcake</a></li>
-                <li><a className="w-full" onClick={() => toggleTheme('black')}>Black</a></li>
-                <li><a className="w-full" onClick={() => toggleTheme('nord')}>Nord</a></li>
-                <li><a className="w-full" onClick={() => toggleTheme('corporate')}>Corporate</a></li>
-                <li><a className="w-full" onClick={() => toggleTheme('synthwave')}>Synthwave</a></li>
-                <li><a className="w-full" onClick={() => toggleTheme('retro')}>Retro</a></li>
-                <li><a className="w-full" onClick={() => toggleTheme('sunset')}>Sunset</a></li>
-                <li><a className="w-full" onClick={() => toggleTheme('dim')}>Dim</a></li>
-                <li><a className="w-full" onClick={() => toggleTheme('winter')}>Winter</a></li>
-                <li><a className="w-full" onClick={() => toggleTheme('coffee')}>Coffee</a></li>
+            <div className="dropdown dropdown-bottom dropdown-right font-semibold text-2xl cursor-pointer" tabIndex={0}> Theme
+              <ul tabIndex={0} className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52 cursor-pointer">
+                <li><a className="w-full cursor-pointer" onClick={() => toggleTheme('garden')}><p className="">Garden</p></a></li>
+                <li><a className="w-full cursor-pointer" onClick={() => toggleTheme('forest')}><p className="">Forest</p></a></li>
+                <li><a className="w-full cursor-pointer" onClick={() => toggleTheme('business')}><p className="">Business</p></a></li>
+                <li><a className="w-full cursor-pointer" onClick={() => toggleTheme('night')}><p className="">Night</p></a></li>
+                <li><a className="w-full cursor-pointer" onClick={() => toggleTheme('light')}><p className="">Light</p></a></li>
+                <li><a className="w-full cursor-pointer" onClick={() => toggleTheme('dark')}><p className="">Dark</p></a></li>
+                <li><a className="w-full cursor-pointer" onClick={() => toggleTheme('cupcake')}><p className="">Cupcake</p></a></li>
+                <li><a className="w-full cursor-pointer" onClick={() => toggleTheme('black')}><p className="">Black</p></a></li>
+                <li><a className="w-full cursor-pointer" onClick={() => toggleTheme('nord')}><p className="">Nord</p></a></li>
+                <li><a className="w-full cursor-pointer" onClick={() => toggleTheme('corporate')}><p className="">Corporate</p></a></li>
+                <li><a className="w-full cursor-pointer" onClick={() => toggleTheme('synthwave>')}><p className="">Synthwave</p></a></li>
+                <li><a className="w-full cursor-pointer" onClick={() => toggleTheme('retro')}><p className="">Retro</p></a></li>
+                <li><a className="w-full cursor-pointer" onClick={() => toggleTheme('sunset')}><p className="">Sunset</p></a></li>
+                <li><a className="w-full cursor-pointer" onClick={() => toggleTheme('dim')}><p className="">Dim</p></a></li>
+                <li><a className="w-full cursor-pointer" onClick={() => toggleTheme('winter')}><p className="">Winter</p></a></li>
+                <li><a className="w-full cursor-pointer" onClick={() => toggleTheme('coffee')}><p className="">Coffee</p></a></li>
 
               </ul>
             </div>

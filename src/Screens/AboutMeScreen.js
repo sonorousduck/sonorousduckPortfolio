@@ -1,5 +1,4 @@
 import { React, useEffect } from "react";
-import { Typography } from "@mui/material";
 import portrait from './../static/images/Ryan_Anderson.jpg'
 import './../static/css/AboutMe.css'
 import Navbar from "../Components/Header/Header";
@@ -24,10 +23,10 @@ const About = () => {
                 </div>
 
                 <div className="w-full justify-center flex flex-row mt-8">
-                    <a className="btn w-4/12 mx-4" href="Ryan Anderson Resume.pdf" download={"Ryan Anderson Resume.pdf"}>
+                    <a className="btn w-4/12 mx-4" href="RyanAndersonResume.pdf" download={"RyanAndersonResume.pdf"}>
                         Resume
                     </a>
-                    <a className="btn w-4/12 mx-4" href="Ryan Anderson CV.docx.pdf" download={"Ryan Anderson CV.docx.pdf"}>
+                    <a className="btn w-4/12 mx-4" href="RyanAndersonCV.docx.pdf" download={"RyanAndersonCV.docx.pdf"}>
                         Cover Letter
                     </a>
                 </div>

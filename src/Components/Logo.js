@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAws, faDigitalOcean, faJava, faJs, faNodeJs, faPython, faReact, faUnity, faVuejs } from "@fortawesome/free-brands-svg-icons";
-import cppLogo from "../static/images/c++_logo.svg"
+import cppLogo from "../static/images/cpp_logo.svg"
 import csharpLogo from "../static/images/csharp_logo.svg"
 import pytorchLogo from "../static/images/PyTorch_logo.svg"
 import rosLogo from "../static/images/ros_logo.svg"
