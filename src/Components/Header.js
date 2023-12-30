@@ -8,8 +8,8 @@ const Navbar = () => {
   useEffect(() => {
     let theme = localStorage.getItem('theme')
     if (!theme) {
-      localStorage.setItem('theme', 'garden')
-      theme = 'garden'
+      localStorage.setItem('theme', 'dim')
+      theme = 'dim'
     }
     const htmltag = document.querySelector('html')
     htmltag.setAttribute('data-theme', theme)
