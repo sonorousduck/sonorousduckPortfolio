@@ -8,7 +8,6 @@ import Logo from "./Logo";
   link: the link the card should take you to on click
 */
 const ProjectsPost = (props) => {
-  console.log(props.icons)
   return (
     <div className="w-7/12">
       <div className="card lg:card-side bg-base-100 shadow-xl glass mb-8 w-full">
@@ -22,11 +21,28 @@ const ProjectsPost = (props) => {
             <div className="self-center  flex flex-row">
               {props.icons.map((icon, key) => (
                 <Logo key={key} icon={icon} />
-              ))} 
+              ))}
 
             </div>
             <div className="">
-              <a href={props.link} className="btn btn-primary">More</a>
+              {/* If disabled, show a little popup that says to contact me since it isn't a public repo */}
+              {props.disabled ?
+                <>
+                  <button className="btn btn-primary" onClick={() => document.getElementById('my_modal_2').showModal()}>Info</button>
+                  <dialog id="my_modal_2" className="modal modal-bottom sm:modal-middle">
+                    <div className="modal-box">
+                      <h3 className="font-bold text-lg">{props.title} is not a public repo</h3>
+                      <p className="py-4">Please contact me and I can get you the code</p>
+                    </div>
+                    <form method="dialog" className="modal-backdrop">
+                      <button>close</button>
+                    </form>
+                  </dialog>
+                </> :
+                <>
+                  <a href={props.link} className="btn btn-primary">More</a>
+                </>
+              }
             </div>
           </div>
         </div>

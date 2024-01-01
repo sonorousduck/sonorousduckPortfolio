@@ -12,6 +12,7 @@ const regularProjects = [
     image: require("../static/images/acoustic_stealth.png"),
     alt: "Acoustic Stealth Preview",
     description: "Developing an algorithm using ROS2 for determing routes of best acoustic masking for navigation",
+    disabled: true,
     icons: ["Python", "PyTorch", "ROS2", "Unity"]
 
   },
@@ -29,6 +30,7 @@ const regularProjects = [
     image: require("../static/images/Human_Trajectories.png"),
     alt: "Human Trajectory Example",
     description: "Developing algorithms to dynamically predict human trajectories and plan safe routes accomodating them",
+    disabled: true,
     icons: ["Python", "PyTorch", "Gazebo", "ROS2"]
 
   },
@@ -37,6 +39,7 @@ const regularProjects = [
     image: require("../static/images/recollex_example.png"),
     alt: "RecolleX Example",
     description: "Developing a React Native Expo application for a client enabling users to track interactions with others and remember experiences they have had",
+    disabled: true,
     icons: ["Javascript", "React Native", "Expo", "Firebase"]
 
   },
@@ -181,7 +184,7 @@ const Projects = () => {
           <h1 className="font-sans font-semibold text-5xl">Projects</h1>
         </div>
         {regularProjects.map((project, key) => 
-          <ProjectsPost key={key} title={project.title} image={project.image} alt={project.alt} description={project.description} link={project.link} icons={project.icons} />
+          <ProjectsPost key={key} title={project.title} image={project.image} alt={project.alt} description={project.description} link={project.link} icons={project.icons} disabled={project.disabled}/>
         )}
         {audioProjects.map((project, key) => 
           <AudioPost key={key} title={project.title} audioSrc={project.audioSrc} description={project.description} link={project.link} icons={project.icons}/>
