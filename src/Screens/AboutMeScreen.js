@@ -19,7 +19,7 @@ const About = () => {
                 <img className="h-1/5 w-1/5 rounded-xl" src={portrait} alt="Ryan Anderson Portrait" />
                 <div className="w-full justify-center flex flex-row mt-8">
                 <FontAwesomeIcon icon="fa-solid fa-download" className=""/> 
-                    <a className="btn w-4/12 mx-4" href={require("../static/documents/RyanAndersonCV.docx.pdf")} download={"RyanAndersonResume.pdf"}>
+                    <a className="btn w-4/12 mx-4" href={require("../static/documents/RyanAndersonResume.pdf")} download={"RyanAndersonResume.pdf"}>
                     <FontAwesomeIcon icon={faDownload} /> Resume
                     </a>
                     <a className="btn w-4/12 mx-4" href={require("../static/documents/RyanAndersonCV.docx.pdf")} download={"RyanAndersonCV.docx.pdf"}>
